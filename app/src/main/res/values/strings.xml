@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Music_app</string>
+    <string name="inButton">Войти</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="sign_up">Создать аккаунт?</string>
+</resources>
