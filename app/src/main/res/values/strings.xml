@@ -1,7 +1,17 @@
 <resources>
-    <string name="app_name">Music_app</string>
-    <string name="inButton">Войти</string>
+    <string name="app_name">Music app</string>
+    <string name="sign_in">Войти</string>
     <string name="login">Логин</string>
     <string name="password">Пароль</string>
     <string name="sign_up">Создать аккаунт?</string>
+    <string name="button_ok">ОК</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_artists">Исполнители</string>
+    <string name="title_map">Карта</string>
+    <string name="enter_login">Введите логин</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="error">Ошибка</string>
+    <string name="wrong_sign_in_credentials">Логин или пароль введены неверно</string>
+    <string name="title_search">Поиск</string>
 </resources>
