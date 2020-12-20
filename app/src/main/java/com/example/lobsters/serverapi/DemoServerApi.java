@@ -34,4 +34,10 @@ public class DemoServerApi {
     public static boolean checkSignIn(String login, String password) {
         return CORRECT_LOGIN_PAIRS.containsKey(login) && Objects.equals(CORRECT_LOGIN_PAIRS.get(login), password);
     }
+
+    public static final String[] NAMES = new String[]{"Смирнова Настенька"};
+    public static final String[] LOCATION = new String[]{
+            "Россия, Москва", "Россия, Екатеринбург"
+    };
+
 }

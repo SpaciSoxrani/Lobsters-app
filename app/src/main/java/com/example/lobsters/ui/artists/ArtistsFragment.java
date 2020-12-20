@@ -29,6 +29,7 @@ public class ArtistsFragment extends Fragment {
                 ViewModelProviders.of(this).get(ArtistsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_events, container, false);
         final LinearLayoutCompat cardsContainer = root.findViewById(R.id.card_container);
+
         artistsViewModel.getEvents().observe(getViewLifecycleOwner(), new Observer<List<Event>>() {
             @Override
             public void onChanged(List<Event> events) {

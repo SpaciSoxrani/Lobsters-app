@@ -14,4 +14,8 @@
     <string name="error">Ошибка</string>
     <string name="wrong_sign_in_credentials">Логин или пароль введены неверно</string>
     <string name="title_search">Поиск</string>
+    <string name="title_profile">Профиль</string>
+//данные в профиле
+    <string name="name_profile">Профиль</string>
+    <string name="best_genres">Любимые жанры</string>
 </resources>

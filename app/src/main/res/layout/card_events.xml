@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main_card"
     android:layout_width="match_parent"
@@ -89,6 +90,16 @@
                 android:text="12 Ноября, 12:00"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
                 android:textColor="@android:color/white" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/button_state"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@null">
+            </androidx.appcompat.widget.AppCompatImageButton>
         </RelativeLayout>
     </FrameLayout>
 </androidx.cardview.widget.CardView>
