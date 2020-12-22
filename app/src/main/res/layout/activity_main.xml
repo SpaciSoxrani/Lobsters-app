@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
-        app:menu="@menu/main_toolbar_menu"
+        app:menu="@menu/events_toolbar_menu"
          />
 
 </com.google.android.material.appbar.AppBarLayout>

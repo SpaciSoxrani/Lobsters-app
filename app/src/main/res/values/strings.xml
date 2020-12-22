@@ -18,4 +18,5 @@
 //данные в профиле
     <string name="name_profile">Профиль</string>
     <string name="best_genres">Любимые жанры</string>
+    <string name="title_edit">Редактировать</string>
 </resources>

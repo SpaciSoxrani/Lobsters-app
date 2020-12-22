@@ -1,0 +1,121 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/event_bottomsheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardview_dark_background"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="@dimen/bottomsheet_event_peek_height"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingLeft="@dimen/card_horizontal_padding"
+        android:paddingTop="@dimen/card_vertical_padding"
+        android:paddingRight="@dimen/card_horizontal_padding"
+        android:paddingBottom="@dimen/card_vertical_padding">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/bottomsheet_top"
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bottomsheet_top" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottomsheet_top"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="top"
+            android:layout_marginEnd="30dp"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:maxLines="1"
+            android:text="Мальбек"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/button_favourite"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/bottomsheet_top"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_outline_favorite_border_24dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_name"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="Описание концерта с очень важной информацией об артисте длиной в две строки"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_description"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_time_24dp"
+            android:gravity="center_vertical"
+            android:text="12 Ноября, 12:00"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+            android:textColor="@android:color/white" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_date"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_price_24dp"
+            android:gravity="center_vertical"
+            android:text="Цена"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+            android:textColor="@android:color/white" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_date"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_location_event_24dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="Адрес"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_event"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomsheet_image_height"
+        android:layout_below="@id/text_price"
+        android:layout_marginBottom="@dimen/bottom_nav_height"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/demo_artist_2" />
+</androidx.appcompat.widget.LinearLayoutCompat>

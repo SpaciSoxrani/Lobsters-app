@@ -13,7 +13,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.lobsters.R;
 import com.example.lobsters.ui.MainActivity;
-import com.example.lobsters.utils.Utils;
+import com.example.lobsters.utils.UiUtils;
 import com.example.lobsters.serverapi.DemoServerApi;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
@@ -75,6 +75,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 }
             }
         });
+
+        //todo for debug purposes:
+        loginEditText.setText("1");
+        passwordEditText.setText("1");
     }
 
     @Override
@@ -105,7 +109,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         if (!login.isEmpty() && !password.isEmpty()) {
             boolean isSignedIn = DemoServerApi.checkSignIn(login, password);
             if (!isSignedIn) {
-                Utils.ShowSimpleDialog(getString(R.string.error), getString(R.string.wrong_sign_in_credentials), this);
+                UiUtils.ShowSimpleDialog(getString(R.string.error), getString(R.string.wrong_sign_in_credentials), this);
             } else {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);

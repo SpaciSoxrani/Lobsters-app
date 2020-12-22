@@ -1,25 +1,18 @@
 package com.example.lobsters.utils;
 
-import android.content.Context;
-import android.content.DialogInterface;
+import com.example.lobsters.models.Event;
+import com.google.android.gms.maps.model.LatLng;
 
-import androidx.appcompat.app.AlertDialog;
-
-import com.example.lobsters.R;
-import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+import java.util.HashMap;
+import java.util.List;
 
 public class Utils {
+    public static final LatLng INITIAL_MAP_CAMERA_POS  = new LatLng(56.83837521490325, 60.60333247403461);
 
-    public static void ShowSimpleDialog(String title, String description, Context context){
-        AlertDialog dialog = new MaterialAlertDialogBuilder(context)
-                .setTitle(title)
-                .setMessage(description)
-               .setPositiveButton(R.string.button_ok, new DialogInterface.OnClickListener() {
-                   @Override
-                   public void onClick(DialogInterface dialog, int which) {
-                       dialog.cancel();
-                   }
-               }).create();
-        dialog.show();
+    public static HashMap<Long, Event> createEventsMap(List<Event> events) {
+        HashMap<Long, Event> result = new HashMap<>();
+        for (Event event : events)
+            result.put(event.getId(), event);
+        return result;
     }
 }

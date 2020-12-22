@@ -2,6 +2,7 @@
 <resources>
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#6200EE</color>
+    <color name="markerDisabled">#212121</color>
     <color name="colorAccent">#e05297</color>
 
     <color name="darkerBlue">#0A1737</color>
